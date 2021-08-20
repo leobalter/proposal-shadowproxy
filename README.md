@@ -106,7 +106,6 @@ For illustration purposes, this document is using `ShadowProxy`. The name and na
 |Internal Method	|Handler Method	|
 |---	|---	|
 |[[GetPrototypeOf]]	|`getPrototypeOf`	|
-|---	|---	|
 |[[SetPrototypeOf]]	|`setPrototypeOf`	|
 |[[IsExtensible]]	|`isExtensible`	|
 |[[PreventExtensions]]	|`preventExtensions`	|
@@ -120,14 +119,14 @@ For illustration purposes, this document is using `ShadowProxy`. The name and na
 |[[Call]]	|`apply`	|
 |[[Construct]]	|`construct`	|
 
-### ShadowProxy (** **target,** **handler** **)
+### ShadowProxy (target, handler)
 
 When `ShadowProxy` is called with arguments target and handler, it performs the following steps:
 
 1. If NewTarget is undefined, throw a TypeError exception.
 2. Return ? ShadowProxyCreate(target, handler).
 
-### ShadowProxyCreate ( **** target, **** handler **** )
+### ShadowProxyCreate (target, handler)
 
 The abstract operation `ShadowProxyCreate` takes arguments target and handler. It is used to specify the creation of new Proxy exotic objects. It performs the following steps when called:
 
@@ -235,7 +234,7 @@ regular.foo = 42;
 
 ## Lookup and Current Usage Data
 
-In an example using an application in production, a quick overview shows the lookup number being high. A 3 clicks interaction on a page of a ticket system, shows that a framework system has the `get` trap is invoked 74828 times and `getOwnPropertyDescriptor` is invoked 29988 times
+In an example using an application in production, a quick overview shows the lookup number being high. A 3 clicks interaction on a page of a ticket system, shows that a framework system has the `get` trap is invoked 74828 times and `getOwnPropertyDescriptor` is invoked 29988 times.
 
 > __ACTION__: Grab more data
 
