@@ -157,7 +157,7 @@ The exotics internals of a shadow proxy are pretty similar to the [regular proxy
 
 ### Regular Proxy [[Get]]
 
-[Image: Screen Shot 2021-08-18 at 11.25.49 AM.png]
+<img width="851" alt="Screen Shot 2021-08-18 at 11 25 49 AM" src="https://user-images.githubusercontent.com/301201/130160228-df2f0b29-0c12-4f27-8bb1-654888076089.png">
 
 ### Shadow Proxy [[Get]]
 
